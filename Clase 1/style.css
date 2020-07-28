@@ -1,0 +1,39 @@
+header {
+    background-color: black;
+    color: white;
+    height: 10vh;
+    text-align: center;
+    padding: 4vh;    
+}
+h1{
+    font: size 8vh;
+
+}
+h1,h2{
+    margin: 0;
+}
+
+main{
+    height: 80vh; 
+}
+footer{
+    height: 10vh;
+}
+
+.elemento1{
+    background-color: teal;
+    height: 40px;
+    color: white;
+}
+.elemento2{
+    background-color:yellow;
+    height: 40px;
+    color: orange;
+}
+
+.elemento3{
+    background-color:blue;
+    height: 40px;
+    color: paleturquoise;
+
+}

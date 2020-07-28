@@ -1,0 +1,36 @@
+header {
+    background-color: black;
+    color: white;
+    height: 20vh;
+    text-align: center;
+    padding: 2vh;
+    font-size: 5vh;
+    font-style: initial;
+    margin: auto;
+}
+h3{
+    font-size: 3vh;
+    margin: 2;
+    color: black;
+    text-align: center;
+    font-style: oblique;
+}
+main{
+    height: 80vh;
+}
+p{
+    font-size: medium;
+
+}
+div{
+    width: 100%;
+    text-align: justify;
+}
+img{
+    padding: 4.5vh;
+    width: 400px; 
+    height: auto; 
+    display: block;
+    margin: auto; 
+    color: black;
+}
