@@ -1,34 +1,49 @@
 header {
     background-color: black;
     color: white;
-    height: 20vh;
+    height: auto;
     text-align: center;
     padding: 2vh;
-    font-size: 5vh;
-    font-style: initial;
+    font-size: 8.5vh;
+    font-style: normal;
     margin: auto;
 }
-h3{
+Body{
+    background-color: black;
+}
+
+h4{
     font-size: 3vh;
-    margin: 2;
-    color: black;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 4vh;
+    margin: 2vh;
+    color:white;
     text-align: center;
-    font-style: oblique;
+    font-style: italic;
 }
 main{
     height: 80vh;
+    background-color:black;
 }
 p{
-    font-size: medium;
+    font-size: larger;
+    color: white;
+    margin-left:auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;  
+    line-height: 3.5vh;
 
 }
-div{
-    width: 100%;
-    text-align: justify;
-}
+
+
 img{
+    border-style: dashed;
     padding: 4.5vh;
-    width: 400px; 
+    width: 600px; 
     height: auto; 
     display: block;
     margin: auto; 
