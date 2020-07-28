@@ -17,9 +17,9 @@ for lista in matriz:
 
 lista = [2,3,45,67,1,5,87,98,89]
 print (lista [2:6])
-# print ([2:-1]) # menos la ultima posicion #
+print(lista[2:-2]) # menos la ultima posicion 
 print (lista[:]) #desde el comienzo hasta la coordenada que yo quiera 
 print (lista [:]) #para mostrar todo
 
 print (matriz [0] [1:3])
-print (matriz [1][:4])
+print (matriz [1][:4]) #desde el 4 hacia la derecha no hay nada
