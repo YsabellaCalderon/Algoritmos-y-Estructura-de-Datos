@@ -1,3 +1,4 @@
+# VERSUS    
 import busqueda_binaria
 import busqueda_lineal
 import time
@@ -11,11 +12,11 @@ def resultado (encontrado):
 lista = busqueda_lineal.crear_lista()
 print(lista)
 lista_ordenada = sorted(lista)
-numero = int (input ("ingrese número objetivo : "))
+numero = int (input ("ingrese número objetivo : ")) #numero a buscar en la lista
 comienzo = time.time()
 resultado1 = busqueda_lineal.busqueda_lineal(lista,numero)
 resultado(resultado1)
-print (f"tiempo de busqueda lineal {time.time()-comienzo} en segundos")
+print (f"tiempo de busqueda lineal {time.time()-comienzo} en segundos") # si se coloca print f no hay que colocar el punto format
 comienzo = time.time()
 resultado2 = busqueda_binaria.busqueda_binaria(lista_ordenada,0,len(lista_ordenada), numero)
 print (f"tiempo de busqueda bineria {time.time()-comienzo} en segundos")

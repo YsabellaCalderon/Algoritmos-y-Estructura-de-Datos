@@ -3,7 +3,7 @@ import time as t
 
 def crear_lista():
     size_list= int (input("ingrese el tamaño de la lista : "))
-    lista  = [r.randint(1,1000000) for i in range (size_list)]
+    lista  = [r.randint(1,1000000) for i in range (size_list)] #r.randint: nuemero aleatorio en cierto rango
 
     return lista
 
