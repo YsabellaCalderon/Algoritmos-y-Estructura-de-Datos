@@ -1,0 +1,91 @@
+
+.black-text{
+    color: black;
+}
+.blue-text{
+    color: rgb(225, 237, 244);
+}
+
+.white-text{
+    color: whitesmoke;
+}
+h2{
+    font-size: 40px;
+}
+
+header{
+    background-color: rgb(234, 222, 218);
+    height: auto;
+    text-align: center;
+    padding: 2px;
+    font-size: 40px;
+    margin: auto;
+    
+}
+
+body {
+    background-color: rgb(234, 222, 218) ;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(153, 136, 136);
+    letter-spacing: 5px;
+    font-size: large;
+    
+    }
+    
+li {
+    float: left;
+}
+    
+    
+li a{
+    display: block;
+    color: rgb(234, 222, 218);
+    text-align: center;
+    padding: 2px 4px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer_style{
+    font-size: small;
+    font-weight: lighter;
+    color:white;
+}
+
+.footer_link{
+    background-color:rgb(153, 136, 136) ;
+    text-align: center;
+    font-family: monospace;
+    font-size: small;
+    line-height: 20px;
+}
+
+div{
+    color:rgb(225, 237, 244) ;
+}
+
+p{
+    font-family: eb Garamond ;
+    font-size: large;
+    color: black;
+    text-align: center;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    height: auto ;
+    line-height: 25px;
+}
+
+.search_buttom {
+    text-align: right; 
+    border-radius: 2px;
+    background-color: whitesmoke;
+    margin-left: 560px;
+}
