@@ -1,84 +1,98 @@
 body {
-    background-image: url(https://res.cloudinary.com/nicolegrima/image/upload/c_scale,w_2000/v1486269069/palms_jpnuzf.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    font-size: 16px;
-    }
+    color: #393f57;
+    font-size:120%;
+}
 
-    .profileimg img {
-    border-radius: 20px;
-    max-width: 70%;
-    box-shadow: 5px 5px 5px 0px rgba(97,90,97,1);
-    margin-bottom: 40px;
-    }
+h1 {
+    color: #00ab91;
+    line-height:1.1;
+}
 
-    h2 {
-    color: #FF4500;
-    color: #007BA7;
+h2 {
+    line-height:1.1;
+}
+
+p {
+    line-height:1.4;
+}
+
+header .bars {
+    display: block;
+    height: 5px;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
     text-align: center;
-    margin: 20px 0px 30px;
-    padding-top: 40px;
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
-    }
+    top: 0;
+    width: 100%;
+}
+header .bars ul {
+margin: 0;
+padding: 0;
+}
+header .bars ul li {
+    display: block;
+    float: left;
+    height: 5px;
+    overflow: hidden;
+    width: 20%;
+}
+header .bars .cor-1 {
+    background: #ED5565;
+}
+header .bars .cor-2 {
+    background: #f59120;
+}
+header .bars .cor-3 {
+    background: #FCBB42;
+}
+header .bars .cor-4 {
+    background: #94c23d;
+}
+header .bars .cor-5 {
+    background-color: #3498db;
+}
 
-    .contents {
-    margin-left: 100px;
-    margin-right: 100px;
-    }
-
-    .about-text, .connect-text {
-    font-size: 18px;
-    padding: 30px 60px 60px 60px;
-    }
-
-
-
-    #Contact i {
-    font-size: 40px;
-    padding: 30px 0px 60px 40px;
-    }
-
-    #projectgoals {
-    padding: 10px 0px;
-    }
-
-    .row {
-    max-width: 100%;
-    }
-
-    .portfolio-img {
-    padding: 10px 20px 40px 20px;
-    max-width: 100%;
-    }
-
-
-    .col-sm-6 h4, .col-sm-6 h5 {
-    padding: 0px 20px;
-    max-width: 100%;
+header .header-title {
+    background: #00ab91;
+    height: 200px;
+    color: #efefef;
+    line-height: 200px;
     text-align: center;
-    }
+    font-size: 28px;
+    font-weight:bold;
+}
 
-    .opacity {
-        background: rgba(255, 255, 255, 0.7);
-    }
+section {
+    margin:0 auto;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+    max-width:600px;
+}
 
-    .social {
-    text-align:center
-    }
-    a:link {
-    color: #000000;
-    }
+section:first-child:last-child {
+    padding-top:5%;
+    padding-bottom:5%;
+}
 
-    a:hover {
-    color: #FF4500;
-    }
+section.content-block {
+    font-family:'proxima-nova-soft';
+}
+section.content-block p {
+    font-weight:500;
+}
 
-    a:visited {
-    color: #007BA7;
-    }
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
 
-    footer {
-    padding-top: 30px;
-    color: #FFFFFF;
-    } 
+@media screen and (max-width: 960px) {
+    header .bars {
+        position: inherit;
+    }
+}

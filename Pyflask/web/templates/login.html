@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/login.css')}}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login|APP</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card-container">
-          <div class="left-circle-gradient"></div>
-          <div class="right-circle-gradient"></div>
-          <form class="form-container" action="login" method="post">
-            <h1>Login</h1>
-            <input type="text" name="username" placeholder="Username" />
-            <input type="password" name="password" placeholder="password" />
-            <input type="submit" />
-          </form>
-        </div>
-        <div class="card-container-gradient">
-        </div>
+  // Mixins
+mixin input(type, label)
+  .input-container
+    input(type='#{type}' id='#{label}' required)
+    label(for='#{label}')=label
+    .bar
+mixin button(text)
+  .button-container
+    button
+      span=text
 
-      </div>
+// Pen Title
+.pen-title
+  h1 Material Login Form
+  span
+    | Pen <i class='fa fa-code'></i> by <a href='http://andytran.me'>Andy Tran</a>
+    
+.rerun
+  a(href='') Rerun Pen
+  
+.container
+  .card
+  .card
+    h1.title Login
+    form
+      +input('text', 'Username')
+      +input('password', 'Password')
+      +button('Go')
+      .footer
+        a(href='#') Forgot your password?
+  .card.alt
+    .toggle
+    h1.title Register
+      .close
+    form
+      +input('text', 'Username')
+      +input('password', 'Password')
+      +input('password', 'Repeat Password')
+      +button('Next')
 
-
-    </form>
+// Portfolio
+a#portfolio(href='http://andytran.me/' title='View my portfolio!')
+  i.fa.fa-link
+  
+// CodePen
+a#codepen(href='https://codepen.io/andytran/' title='Follow me!')
+  i.fa.fa-codepen
 </body>
-</html> 
+</html>
