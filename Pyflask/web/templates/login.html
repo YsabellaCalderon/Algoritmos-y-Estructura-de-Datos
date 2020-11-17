@@ -1,57 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login|APP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/login.css')}}">
 </head>
 <body>
-  // Mixins
-mixin input(type, label)
-  .input-container
-    input(type='#{type}' id='#{label}' required)
-    label(for='#{label}')=label
-    .bar
-mixin button(text)
-  .button-container
-    button
-      span=text
+    <div class="login-box">
+        <form action="login" method="post">
+            <h1>Ingrese su nombre</h1>
+            <div class="textbox">
 
-// Pen Title
-.pen-title
-  h1 Material Login Form
-  span
-    | Pen <i class='fa fa-code'></i> by <a href='http://andytran.me'>Andy Tran</a>
-    
-.rerun
-  a(href='') Rerun Pen
-  
-.container
-  .card
-  .card
-    h1.title Login
-    form
-      +input('text', 'Username')
-      +input('password', 'Password')
-      +button('Go')
-      .footer
-        a(href='#') Forgot your password?
-  .card.alt
-    .toggle
-    h1.title Register
-      .close
-    form
-      +input('text', 'Username')
-      +input('password', 'Password')
-      +input('password', 'Repeat Password')
-      +button('Next')
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" name="name" placeholder="Ingrese su nombre" >
+            </div>
+            <div class="textbox">
 
-// Portfolio
-a#portfolio(href='http://andytran.me/' title='View my portfolio!')
-  i.fa.fa-link
-  
-// CodePen
-a#codepen(href='https://codepen.io/andytran/' title='Follow me!')
-  i.fa.fa-codepen
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="pass" placeholder="Ingrese su contraseña" >
+            </div>
+            
+            <input type="submit" class="btn"  value="Entrar">
+        </form>
+    </div>
 </body>
 </html>
