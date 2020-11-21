@@ -45,13 +45,13 @@ input:-webkit-autofill:active  {
     border-bottom: 1px solid #fcaf50;
 }
 
-.textbox i {
+textbox i {
     width: 26px;
     float: left;
     text-align: center;
 }
 
-.textbox input {
+textbox input {
     border: none;
     outline: none;
     background-color: transparent;
@@ -62,7 +62,7 @@ input:-webkit-autofill:active  {
     margin: 0 10px;
 }
 
-.btn {
+btn {
     width: 100%;
     background-color: transparent;
     border: 2px solid #fcaf50;
@@ -73,13 +73,13 @@ input:-webkit-autofill:active  {
     margin: 12px 0;
 }
 
-.btn:hover {
+btn:hover {
     background-color: #fcaf50;
     color: #000;
     transition: .5s;
 }
 
-.btn:active {
+btn:active {
     background-color: #000;
     color: #fcaf50;
 }
