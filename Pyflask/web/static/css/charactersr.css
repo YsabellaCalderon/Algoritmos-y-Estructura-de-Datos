@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    color: #00ab91;
+    color: rgb(155, 38, 38);
     line-height:1.1;
 }
 
@@ -54,7 +54,7 @@ header .bars .cor-5 {
 }
 
 header .header-title {
-    background: #00ab91;
+    background: rgb(155, 38, 38);
     height: 200px;
     color: #efefef;
     line-height: 200px;

@@ -5,34 +5,38 @@ app = Flask(__name__)
 fileNameCredential = 'users.csv'
 data = helper.leerArchivo(fileNameCredential)
 
+@app.route('/')
+def baseRoute():
+    return redirect(url_for('login'))
+
 @app.errorhandler(404)
 def not_found(error):
     return render_template('404.html')
-
-
-@app.route('/')
-def baseRoute():
-
-
-    return redirect(url_for('login'))
-
-@app.route('/home')
-def home():
-    return render_template('home.html')
 
 @app.route('/success')
 def success():
     return render_template('success.html')
 
-@app.route('/signin', methods = ['POST','GET'])
-def singin():
+@app.route('/home')
+def home():
+    return render_template('homereto.html')
 
+@app.route('/characters')
+def characters():
+    return render_template('charactersreto.html')
+
+@app.route('/places')
+def places():
+    return render_template('placesreto.html')
+
+@app.route('/singin', methods = ['POST','GET'])
+def singin():
+    data = helper.leerArchivo(fileNameCredential)
     if request.method == 'POST':
         helper.saveUser (data,fileNameCredential,request.form['name'],request.form ['pass'] )
         return redirect(url_for('success'))
     else: 
-        return render_template('signIn.html')
-
+        return render_template('singIn.html')
 
 
 @app.route('/login', methods = ['POST','GET'])

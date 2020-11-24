@@ -1,12 +1,12 @@
 
-.black-text{
+black-text{
     color: black;
 }
-.blue-text{
-    color: rgb(225, 237, 244);
+blue-text{
+    color: black;
 }
 
-.white-text{
+white-text{
     color: whitesmoke;
 }
 h2{
@@ -14,7 +14,7 @@ h2{
 }
 
 header{
-    background-color: rgb(234, 222, 218);
+    background-color: whitesmoke;
     height: auto;
     text-align: center;
     padding: 2px;
@@ -24,7 +24,7 @@ header{
 }
 
 body {
-    background-color: rgb(234, 222, 218) ;
+    background-color:whitesmoke ;
 
 }
 
@@ -33,7 +33,7 @@ ul {
     margin: 3px;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(153, 136, 136);
+    background-color:rgb(155, 38, 38);
     letter-spacing: 5px;
     font-size: large;
     
@@ -46,21 +46,21 @@ li {
     
 li a{
     display: block;
-    color: rgb(234, 222, 218);
+    color: whitesmoke;
     text-align: center;
     padding: 2px 4px;
     text-decoration: none;
     margin-left: 5px;
 }
 
-.footer_style{
+footer_style{
     font-size: small;
     font-weight: lighter;
     color:white;
 }
 
-.footer_link{
-    background-color:rgb(153, 136, 136) ;
+footer_link{
+    background-color:rgb(155, 38, 38) ;
     text-align: center;
     font-family: monospace;
     font-size: small;
@@ -68,7 +68,7 @@ li a{
 }
 
 div{
-    color:rgb(225, 237, 244) ;
+    color:rgb(155, 38, 38) ;
 }
 
 p{
@@ -83,7 +83,7 @@ p{
     line-height: 25px;
 }
 
-.search_buttom {
+search_buttom {
     text-align: right; 
     border-radius: 2px;
     background-color: whitesmoke;

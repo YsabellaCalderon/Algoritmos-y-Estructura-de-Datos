@@ -5,7 +5,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     background: url(../img/img.jpg) no-repeat;
-    background-color: #333;
+    background-color:rgb(136, 49, 49);
     background-size: cover;
 }
 input:-webkit-autofill,
@@ -23,7 +23,7 @@ input:-webkit-autofill:active  {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(155, 38, 38);
     padding: 50px;
     border-radius: 20px;
 }
@@ -31,7 +31,7 @@ input:-webkit-autofill:active  {
 .login-box h1 {
     float: left;
     font-size: 20px;
-    border-bottom: 6px solid #fcaf50;
+    border-bottom: 6px solid whitesmoke;
     margin-bottom: 50px;
     padding: 13px 0;
 }
@@ -42,16 +42,16 @@ input:-webkit-autofill:active  {
     font-size: 20px;
     padding: 8px 0;
     margin: 8px 0;
-    border-bottom: 1px solid #fcaf50;
+    border-bottom: 1px solid whitesmoke;
 }
 
-textbox i {
+.textbox i {
     width: 26px;
     float: left;
     text-align: center;
 }
 
-textbox input {
+.textbox input {
     border: none;
     outline: none;
     background-color: transparent;
@@ -62,10 +62,10 @@ textbox input {
     margin: 0 10px;
 }
 
-btn {
+.btn {
     width: 100%;
     background-color: transparent;
-    border: 2px solid #fcaf50;
+    border: 2px solid whitesmoke;
     color: #fff;
     padding: 5px;
     font-size: 18px;
@@ -73,13 +73,13 @@ btn {
     margin: 12px 0;
 }
 
-btn:hover {
-    background-color: #fcaf50;
+.btn:hover {
+    background-color: whitesmoke;
     color: #000;
     transition: .5s;
 }
 
-btn:active {
+.btn:active {
     background-color: #000;
-    color: #fcaf50;
+    color:whitesmoke;
 }

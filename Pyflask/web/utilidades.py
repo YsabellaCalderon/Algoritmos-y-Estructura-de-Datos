@@ -22,11 +22,11 @@ def validatePassword (diccionario, userIn, passwordIn):
 
 def saveUser (originalDict, nombreArchivo, user, psw):
     listaNombres = list (originalDict['user'].values())
-    listaNombres.append(nombre)
+    listaNombres.append(user)
     listaPsw = list (originalDict['pass'].values())
     listaPsw.append(psw)
     originalDict ['user'] = listaNombres
     originalDict ['pass'] = listaPsw
     dataFrameUser = pd.DataFrame(originalDict)
     dataFrameUser.to_csv(nombreArchivo, index=False,sep=';')
-    return none 
+    return None
